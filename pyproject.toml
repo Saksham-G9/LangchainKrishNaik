@@ -1,0 +1,19 @@
+[project]
+name = "langchainkrishnaik"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "bs4>=0.0.2",
+    "chromadb>=1.5.9",
+    "ipykernel>=7.3.0",
+    "langchain>=1.4.0",
+    "langchain-chroma>=1.1.0",
+    "langchain-classic>=1.0.8",
+    "langchain-community>=0.4.2",
+    "langchain-openai>=1.6.0",
+    "langchain-text-splitters>=1.1.2",
+    "pypdf>=6.17.0",
+    "python-dotenv>=1.2.3",
+]
