@@ -501,6 +501,22 @@ wheels = [
 ]
 
 [[package]]
+name = "fastapi"
+version = "0.141.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "annotated-doc" },
+    { name = "pydantic" },
+    { name = "starlette" },
+    { name = "typing-extensions" },
+    { name = "typing-inspection" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/8a/02/91e3416a8fdd715abb903a952a6bec7cdd8d14eed55d415fc8595524c319/fastapi-0.141.1.tar.gz", hash = "sha256:e8822fc40db1e1858054d7a949a888695bc9bdce70139178e33bd2871a453ca1", size = 425799, upload-time = "2026-07-29T17:18:05.568Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cb/03/10388a42375ee7e4ac9b94eb2c5c569c8b5795e377e701c9ac3ad63de890/fastapi-0.141.1-py3-none-any.whl", hash = "sha256:bfb91aa2d334c61cb35ba9a116fc123b3d3df31640b801cf57a7a78ec3f603b3", size = 131954, upload-time = "2026-07-29T17:18:04.364Z" },
+]
+
+[[package]]
 name = "filelock"
 version = "3.32.5"
 source = { registry = "https://pypi.org/simple" }
@@ -1146,30 +1162,40 @@ source = { virtual = "." }
 dependencies = [
     { name = "bs4" },
     { name = "chromadb" },
+    { name = "fastapi" },
     { name = "ipykernel" },
     { name = "langchain" },
     { name = "langchain-chroma" },
     { name = "langchain-classic" },
     { name = "langchain-community" },
+    { name = "langchain-core" },
     { name = "langchain-openai" },
     { name = "langchain-text-splitters" },
+    { name = "langserve" },
     { name = "pypdf" },
     { name = "python-dotenv" },
+    { name = "sse-starlette" },
+    { name = "uvicorn" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "bs4", specifier = ">=0.0.2" },
     { name = "chromadb", specifier = ">=1.5.9" },
+    { name = "fastapi", specifier = ">=0.141.1" },
     { name = "ipykernel", specifier = ">=7.3.0" },
     { name = "langchain", specifier = ">=1.4.0" },
     { name = "langchain-chroma", specifier = ">=1.1.0" },
     { name = "langchain-classic", specifier = ">=1.0.8" },
     { name = "langchain-community", specifier = ">=0.4.2" },
+    { name = "langchain-core", specifier = ">=1.6.2" },
     { name = "langchain-openai", specifier = ">=1.6.0" },
     { name = "langchain-text-splitters", specifier = ">=1.1.2" },
+    { name = "langserve", specifier = ">=0.3.3" },
     { name = "pypdf", specifier = ">=6.17.0" },
     { name = "python-dotenv", specifier = ">=1.2.3" },
+    { name = "sse-starlette", specifier = ">=3.4.11" },
+    { name = "uvicorn", specifier = ">=0.52.4" },
 ]
 
 [[package]]
@@ -1229,6 +1255,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/3f/ae/91446c1fffa04a2dc1f81afbfb5bfff3590452891a72bd9098a656ab2657/langgraph_sdk-0.4.4.tar.gz", hash = "sha256:4e651ffa09de695681579396375377bdde23bedbc8e35b070e615cbd5af7da8b", size = 345789, upload-time = "2026-08-27T21:25:22.593Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/43/d5/2ad7f3a835c6fcebf58b6669552536ecd52d2dfe4cf49c6c36648fd83572/langgraph_sdk-0.4.4-py3-none-any.whl", hash = "sha256:39afe416c91742925e6f8a93715f566d499b36e1b636b804a4ffe3190e4f4e64", size = 162270, upload-time = "2026-08-27T21:25:21.072Z" },
+]
+
+[[package]]
+name = "langserve"
+version = "0.3.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpx" },
+    { name = "langchain-core" },
+    { name = "orjson" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fb/57/f2f8ab6b81fb20ad0a5a4ea25a7b7e117dee7790f9cf416228372997d611/langserve-0.3.3.tar.gz", hash = "sha256:2d0f74fb8e633e98fdbd5038fe9774a9dcf136e5c779aa9c6475ac26b5c88d0a", size = 1141255, upload-time = "2025-10-17T15:08:37.176Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7f/6d/45fe028f3ca74af99d51eed55a8158f79ced8b2a46aae681315d6476b556/langserve-0.3.3-py3-none-any.whl", hash = "sha256:fac3bb70293b55e87ba27ddcf2d577b5f3bed3fc1b282f978af0b7fbe5ae8578", size = 1173205, upload-time = "2025-10-17T15:08:35.661Z" },
 ]
 
 [[package]]
@@ -2378,6 +2419,19 @@ wheels = [
 ]
 
 [[package]]
+name = "sse-starlette"
+version = "3.4.11"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "starlette" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2b/54/6767bb789b2f2fed6e0f953df949cd39dc263a384c1b65a95232598621d6/sse_starlette-3.4.11.tar.gz", hash = "sha256:1bae716c02f3e6f294be41ff333220692dae7c3cbab077c900f159676719dade", size = 34972, upload-time = "2026-09-05T12:11:04.607Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/98/6a/2ba3ed4a69babf3afdddf7d8314a48d87562c0a442206bbc2a1b50d5efc0/sse_starlette-3.4.11-py3-none-any.whl", hash = "sha256:c7b2244bdff016fe7f64e10075e89a3e6bbf899649cc89b0fe884b5545042453", size = 17122, upload-time = "2026-09-05T12:11:03.195Z" },
+]
+
+[[package]]
 name = "stack-data"
 version = "0.6.3"
 source = { registry = "https://pypi.org/simple" }
@@ -2389,6 +2443,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/28/e3/55dcc2cfbc3ca9c29519eb6884dd1415ecb53b0e934862d3559ddcb7e20b/stack_data-0.6.3.tar.gz", hash = "sha256:836a778de4fec4dcd1dcd89ed8abff8a221f58308462e1c4aa2a3cf30148f0b9", size = 44707, upload-time = "2023-09-30T13:58:05.479Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f1/7b/ce1eafaf1a76852e2ec9b22edecf1daa58175c090266e9f6c64afcd81d91/stack_data-0.6.3-py3-none-any.whl", hash = "sha256:d5558e0c25a4cb0853cddad3d77da9891a08cb85dd9f9f91b9f8cd66e511e695", size = 24521, upload-time = "2023-09-30T13:58:03.53Z" },
+]
+
+[[package]]
+name = "starlette"
+version = "1.6.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b5/b4/205b0d5241d934e8add0c38aa924c4f9fb7330834ff11e5444db964ec3f9/starlette-1.6.0.tar.gz", hash = "sha256:d4e3ac5e546444960c710297a3c9fc3f7ebae1b7e963f3d36173b49da535be9b", size = 2716969, upload-time = "2026-08-08T18:27:57.512Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c8/cb/6a6a47d5b464bd08695d254f3da6e7986cc70c9fa5d778eda57538edfe56/starlette-1.6.0-py3-none-any.whl", hash = "sha256:a86dd39d14bb45f85a3d18525215a9ef0cfd1f192ac793220e72598c90335f0c", size = 75969, upload-time = "2026-08-08T18:27:56.196Z" },
 ]
 
 [[package]]

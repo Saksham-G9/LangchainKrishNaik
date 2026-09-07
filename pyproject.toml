@@ -7,13 +7,18 @@ requires-python = ">=3.14"
 dependencies = [
     "bs4>=0.0.2",
     "chromadb>=1.5.9",
+    "fastapi>=0.141.1",
     "ipykernel>=7.3.0",
     "langchain>=1.4.0",
     "langchain-chroma>=1.1.0",
     "langchain-classic>=1.0.8",
     "langchain-community>=0.4.2",
+    "langchain-core>=1.6.2",
     "langchain-openai>=1.6.0",
     "langchain-text-splitters>=1.1.2",
+    "langserve>=0.3.3",
     "pypdf>=6.17.0",
     "python-dotenv>=1.2.3",
+    "sse-starlette>=3.4.11",
+    "uvicorn>=0.52.4",
 ]
